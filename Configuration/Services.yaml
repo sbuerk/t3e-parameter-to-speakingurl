@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SBUERK\ParameterToSpeakingUrl\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
+  SBUERK\ParameterToSpeakingUrl\SimpleService:
+    public: true
